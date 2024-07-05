@@ -1,0 +1,247 @@
+Private Sub CommandButton1_Click()
+Image1.Visible = True
+Image2.Visible = True
+Image3.Visible = False
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+End Sub
+
+Private Sub CommandButton2_Click()
+UserForm8.Hide
+End Sub
+
+Private Sub Image1_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+Image1.Visible = False
+Image3.Visible = True
+End Sub
+
+Private Sub Image2_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+Image2.Visible = False
+Image4.Visible = True
+
+End Sub
+
+Private Sub Image3_Click()
+Dim Y, S, YH As Integer
+
+Y = Int((Rnd * 100)) + 1
+S = Int((Rnd * 100)) + 1
+YH = Int((Rnd * 100)) + 1
+
+If Y > 30 Then
+
+If S > 70 Then
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+
+If YH > 30 Then
+Image7.Visible = True
+Else
+Image1.Visible = False
+Image3.Visible = False
+Image5.Visible = True
+End If
+
+Else
+Image1.Visible = False
+Image3.Visible = False
+Image5.Visible = True
+
+
+If Y > 30 Then
+If S > 70 Then
+Do
+
+
+Loop While S > 70 And Y > 30
+Else
+Image7.Visible = True
+End If
+
+Else
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+End If
+End If
+
+Else
+Image1.Visible = False
+Image3.Visible = False
+Image5.Visible = True
+
+
+If Y > 30 Then
+If S > 70 Then
+Do
+
+
+
+Loop While S > 70
+Else
+Image7.Visible = True
+End If
+
+Else
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+End If
+
+End If
+
+End Sub
+
+
+Private Sub Image4_Click()
+Dim Y, S, YH As Integer
+
+Y = Int((Rnd * 100)) + 1
+S = Int((Rnd * 100)) + 1
+YH = Int((Rnd * 100)) + 1
+
+If Y > 30 Then
+
+If S > 70 Then
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+
+If YH > 30 Then
+Image7.Visible = True
+
+Else
+Image1.Visible = False
+Image3.Visible = False
+Image5.Visible = True
+
+If S > 70 Then
+If Y > 30 Then
+Do
+
+
+Loop While S > 70 And Y > 30
+Else
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+End If
+
+Else
+Image7.Visible = True
+End If
+
+End If
+
+Else
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+
+If YH > 30 Then
+Image7.Visible = True
+
+Else
+Image1.Visible = False
+Iamge3.Visible = False
+Image5.Visible = True
+
+End If
+
+End If
+
+End If
+
+End Sub
+
+
+Private Sub Image5_Click()
+
+End Sub
+
+Private Sub Image6_Click()
+
+End Sub
+
+Private Sub Image7_Click()
+
+End Sub
+
+Private Sub Label1_Click()
+Dim Y, S, YH As Integer
+
+Y = Int((Rnd * 100)) + 1
+S = Int((Rnd * 100)) + 1
+YH = Int((Rnd * 100)) + 1
+
+If S > 70 Then
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+
+If YH > 30 Then
+Image7.Visible = True
+
+Else
+Image1.Visible = False
+Image3.Visible = False
+Image5.Visible = True
+
+End If
+
+Else
+Image1.Visible = False
+Image3.Visible = False
+Image5.Visible = True
+
+If YH > 30 Then
+If S > 70 Then
+Do
+
+
+Loop While YH > 30 And S > 70
+Else
+Image7.Visible = True
+End If
+
+Else
+Image2.Visible = False
+Image4.Visible = False
+Image6.Visible = True
+End If
+
+End If
+
+End Sub
+
+Private Sub Label2_Click()
+
+End Sub
+
+Private Sub Label3_Click()
+
+End Sub
+
+Private Sub UserForm_Activate()
+Image1.Visible = True
+Image2.Visible = True
+Image3.Visible = False
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub
+
+Private Sub UserForm_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+Image1.Visible = True
+Image3.Visible = False
+Image2.Visible = True
+Image4.Visible = False
+End Sub

@@ -1,0 +1,58 @@
+Private Sub CommandButton1_Click()
+UserForm6.Show
+
+End Sub
+
+Private Sub CommandButton2_Click()
+Label1.Visible = True
+
+Dim threegun, quiz, way As String
+
+threegun = "황야에 세 총잡이들이 있습니다. 한명은 명중률 100%의 '백발백중 홍', 다른 한명은 명중률 70%의 '맥크리 송', 마지막 한명은 명중률 30%의 당신입니다.(풉)"
+quiz = "세 건맨이 실력 차이를 고려해서 당신-송-홍 순서대로 번갈아가면서 총을 쏜다고 할 때 명중률이 가장 낮은 당신이 생존률을 높이기위해선 어디를 향해서 총을 쏴야 할까요? 물론 죽으면 순서가 돌아오지 않고 '홍'과 '송'은 합리적인 사고를 한다고 가정합시다."
+way = "(대화창을 더블클릭하세요)"
+
+Label1 = threegun + quiz + way
+
+End Sub
+
+Private Sub Label1_Click()
+
+End Sub
+
+Private Sub Label1_DblClick(ByVal Cancel As MSForms.ReturnBoolean)
+Dim quiz1 As String
+Dim extraquiz As String
+Dim why As String
+Dim ne_xt As String
+
+ne_xt = "(다음으로 넘어가세요)"
+why = "만약에 당신이 홍을 죽였다고 가정해봅시다! 그럼 송과 대결을 해야하는데 송이 선제권을 쥐고있는 이 상황에선 당신의 생존률은 약 11.39%가 됩니다. 송의 생존률은 약 88.61%, 그러니 당신이 불리할 수 밖에 없죠? 만약에 송을 죽였다면 백발백중의 홍이 선제권을 쥐게되니 당신은 사망 확정입니다. 만약 당신이 허공에 쏜다면 합리적인 사고를 하는 홍과 송은 서로에게 총을 겨누게 됩니다. 송이 홍을 못죽인다면 홍과 당신의 대결이 되고 선제권을 쥔 당신의 생존률은 30%가 됩니다. 홍이 죽는다면 송과 대결하게되고 당신의 승률은 약 37.97%가 됩니다. 이를 합산하면 당신의 생존률은 35.58%가 됩니다. 참고로 홍은 21%, 송은 43.42%가 됩니다. 이상하게도 홍의 생존률이 가장 낮네요!" + ne_xt
+
+quiz1 = MsgBox("어디를 향해 쏘시겠습니까? Yes=홍, No=송, Cancel=다른선택지", vbYesNoCancel, "문제")
+If quiz1 = vbYes Or quiz1 = vbNo Then
+Label1 = "땡! 틀리셨습니다! 정답은 다른 선택지에 있었던 <허공에 쏘기>였습니다!" + why
+
+Else
+extraquiz = MsgBox("어디를 향해 쏘시겠습니까? Yes=허공, No=내 머리", vbYesNo, "문제 속 문제")
+
+If extraquiz = vbYes Then
+Label1 = "맞추셨네요! 정답은 <허공에 쏘기>였습니다!" + why
+
+Else
+Label1 = "정신이 나갔군요. 당신은 머리에 뇌가 없나요? 정답은 <허공에 쏘기>입니다!" + why
+
+End If
+
+End If
+
+End Sub
+
+Private Sub UserForm_Activate()
+Label1.Visible = False
+End Sub
+
+Private Sub UserForm_Click()
+
+
+End Sub

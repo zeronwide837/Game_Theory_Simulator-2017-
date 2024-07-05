@@ -1,0 +1,11 @@
+Private Sub CommandButton1_Click()
+UserForm2.Show
+End Sub
+
+Private Sub CommandButton2_Click()
+MsgBox "제작자: 홍준영 디자인: 송민규", vbYesNo, "제작진들"
+End Sub
+
+Private Sub UserForm_Activate()
+
+End Sub

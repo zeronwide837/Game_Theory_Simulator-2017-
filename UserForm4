@@ -1,0 +1,153 @@
+
+Private Sub CommandButton1_Click()
+Image8.Visible = False
+Image7.Visible = False
+Image6.Visible = True
+Image5.Visible = False
+Image1.Visible = False
+Image2.Visible = False
+Image4.Visible = False
+Image9.Visible = False
+Image12.Visible = False
+Image10.Visible = False
+Image13.Visible = False
+Image11.Visible = False
+Image14.Visible = False
+Image15.Visible = True
+Image16.Visible = True
+End Sub
+
+Private Sub CommandButton2_Click()
+Image8.Visible = False
+Image7.Visible = True
+Image6.Visible = False
+Image5.Visible = False
+Image1.Visible = False
+Image2.Visible = False
+Image4.Visible = False
+Image9.Visible = False
+Image12.Visible = True
+Image10.Visible = True
+Image13.Visible = False
+Image11.Visible = False
+Image14.Visible = False
+Image15.Visible = False
+Image16.Visible = False
+
+End Sub
+
+Private Sub CommandButton3_Click()
+Image8.Visible = False
+Image7.Visible = False
+Image6.Visible = False
+Image5.Visible = True
+Image1.Visible = False
+Image2.Visible = False
+Image4.Visible = False
+Image9.Visible = True
+Image12.Visible = False
+Image10.Visible = False
+Image13.Visible = True
+Image11.Visible = False
+Image14.Visible = False
+Image15.Visible = False
+Image16.Visible = False
+End Sub
+
+Private Sub CommandButton4_Click()
+Image8.Visible = False
+Image7.Visible = False
+Image6.Visible = False
+Image5.Visible = False
+Image1.Visible = True
+Image2.Visible = False
+Image4.Visible = False
+Image9.Visible = False
+Image12.Visible = False
+Image10.Visible = False
+Image13.Visible = False
+Image11.Visible = True
+Image14.Visible = True
+Image15.Visible = False
+Image16.Visible = False
+End Sub
+
+Private Sub CommandButton5_Click()
+UserForm4.Hide
+UserForm3.Hide
+
+End Sub
+
+
+Private Sub CommandButton6_Click()
+Image2.Visible = True
+Image4.Visible = True
+Image8.Visible = True
+Image1.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image9.Visible = False
+Image10.Visible = False
+Image11.Visible = False
+Image12.Visible = False
+Image13.Visible = False
+Image14.Visible = False
+Image15.Visible = False
+Image16.Visible = False
+
+End Sub
+
+Private Sub Image11_Click()
+
+End Sub
+
+Private Sub Image14_Click()
+
+End Sub
+
+Private Sub Image2_Click()
+
+End Sub
+
+Private Sub Image4_Click()
+
+End Sub
+
+Private Sub Image9_Click()
+
+End Sub
+
+Private Sub Label1_DblClick(ByVal Cancel As MSForms.ReturnBoolean)
+Label1.Visible = False
+
+End Sub
+
+Private Sub UserForm_Activate()
+Dim dillema_definition As String
+dillema_definition = "이렇게 두 명이서 정보가 공유되지 않는 상황에서 협력과 배신 둘 중에 하나를 택하고 그 순서쌍에 따라 결과가 달라지는 게임을 <죄수의 딜레마>라고 하지. 물론 아까전엔 자네 친구가 무슨 선택을 할 지 가정을 했지만 말이네. 여기에 두명의 선택에 따라 어떤 결과가 발생하는 지 알려주는 시뮬레이터가 있으니 한번 해보라구. 이런 허접한 시뮬레이터 말고 더 고오급스러운 시뮬레이터를 원한다면 구글에 <신뢰의 진화>를 검색해보게나.(더블클릭하여 이 창을 닫으세요.)"
+
+Label1 = dillema_definition
+
+Image8.Visible = True
+Image7.Visible = False
+Image6.Visible = False
+Image5.Visible = False
+Image1.Visible = False
+Image2.Visible = True
+Image4.Visible = True
+Image9.Visible = False
+Image12.Visible = False
+Image10.Visible = False
+Image13.Visible = False
+Image11.Visible = False
+Image14.Visible = False
+Image15.Visible = False
+Image16.Visible = False
+
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub
+ 

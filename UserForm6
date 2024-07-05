@@ -1,0 +1,51 @@
+Private Sub CommandButton1_Click()
+UserForm7.Show
+End Sub
+
+Private Sub CommandButton2_Click()
+Label1.Visible = True
+
+Dim quizexp As String
+
+quizexp = "그렇다면 두번째 문제입니다! 이번엔 세 건맨이 동시에 총을 쏜다고 하네요! 이중에서 생존률이 가장 높은 사람은 누구일까요?(대화창을 더블클릭하세요)"
+
+Label1 = quizexp
+
+End Sub
+
+Private Sub Label1_Click()
+
+End Sub
+
+Private Sub Label1_DblClick(ByVal Cancel As MSForms.ReturnBoolean)
+Dim lastquiz, johncena, why As String
+
+why = "당신들이 모두 합리적인 사고를 한다고 가정합시다. 홍은 생존률을 높이기 위해 송을 쏩니다. 같은 이유로 송과 당신도 홍에게 총을 쏩니다. 송은 일단 무조건 죽고 홍이 살 확률은 당신과 송이 쏜 총 둘 다 오발이 날 확률인 21%입니다. 다시말하자면 당신의 확률이 79%라는 이야기죠! 명중률이 가장 낮은 당신이 가장 높은 생존률을 가진다니 아이러니하네요.(다음을 누르세요)"
+lastquiz = MsgBox("누구일까요? yes=홍 no=송 cancel=당신", vbYesNoCancel, "두번째 문제")
+
+If lastquiz = vbYes Or lastquiz = vbNo Then
+Label1 = "안타깝습니다! 정답은 <당신>입니다!" + why
+
+Else
+johncena = MsgBox("Are you sure about that?", vbYesNo, "진심?")
+If johncena = vbYes Then
+Label1 = "자신만만하시군요. 근데 맞습니다. 정답은 <당신>입니다!" + why
+
+Else
+Label1 = "자신에게 자신감을 가지세요! 정답은 <당신>입니다!" + why
+
+End If
+
+End If
+
+
+End Sub
+
+Private Sub UserForm_Activate()
+Label1.Visible = False
+
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub

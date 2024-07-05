@@ -1,0 +1,63 @@
+Private Sub CommandButton1_Click()
+Dim S, Y As Integer
+
+S = Int((Rnd * 100)) + 1
+Y = Int((Rnd * 100)) + 1
+
+Image3.Visible = False
+Image5.Visible = True
+
+If S > 70 And Y > 30 Then
+Image2.Visible = False
+Image6.Visible = True
+
+Else
+Image1.Visible = False
+Image4.Visible = True
+
+End If
+
+End Sub
+
+Private Sub CommandButton2_Click()
+Image1.Visible = True
+Image2.Visible = True
+Image3.Visible = True
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+End Sub
+
+Private Sub CommandButton3_Click()
+UserForm9.Hide
+End Sub
+
+Private Sub Image1_Click()
+
+End Sub
+
+Private Sub Image4_Click()
+
+End Sub
+
+Private Sub Image5_Click()
+
+End Sub
+
+Private Sub Label3_Click()
+
+End Sub
+
+Private Sub UserForm_Activate()
+Image1.Visible = True
+Image2.Visible = True
+Image3.Visible = True
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub

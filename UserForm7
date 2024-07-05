@@ -1,0 +1,27 @@
+Private Sub CommandButton1_Click()
+UserForm7.Hide
+UserForm6.Hide
+UserForm5.Hide
+
+End Sub
+
+Private Sub CommandButton2_Click()
+UserForm9.Show
+
+End Sub
+
+Private Sub CommandButton3_Click()
+UserForm8.Show
+End Sub
+
+Private Sub Label1_Click()
+
+End Sub
+
+Private Sub Label1_DblClick(ByVal Cancel As MSForms.ReturnBoolean)
+Label1.Visible = False
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub
